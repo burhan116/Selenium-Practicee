@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
 import java.time.Duration;
 
 public class Add_ASN {
@@ -67,7 +66,7 @@ public class Add_ASN {
 
             // Line of Item Pop
             driver.findElement(By.name("item_invoice_no")).sendKeys("INV104");
-            
+
 
             // Save ASN
             //driver.findElement(By.xpath("//body/app-root[1]/app-dashboard[1]/div[1]/div[1]/app-crud[1]/div[3]/div[1]/div[1]/button[1]")).click();
