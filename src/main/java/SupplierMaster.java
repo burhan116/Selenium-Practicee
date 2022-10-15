@@ -71,17 +71,28 @@ public class SupplierMaster {
             browse.sendKeys("C:\\Users\\Saif\\Desktop\\spotify\\aboutphone.jpg"); //Uploading the file using sendKeys
             System.out.println("File is Uploaded Successfully");
 
-            WebElement validityStartDate = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-compliance-pop[1]/div[1]/div[2]/div[5]/div[2]/div[1]/kendo-datepicker[1]/span[1]/kendo-dateinput[1]/span[1]/input[1]"));
-            //Fill date as mm/dd/yyyy as 09/25/2013
-            validityStartDate.sendKeys("10/14/2022");
+//            WebElement validityStartDate = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-compliance-pop[1]/div[1]/div[2]/div[5]/div[2]/div[1]/kendo-datepicker[1]/span[1]/kendo-dateinput[1]/span[1]/input[1]"));
+//            //Fill date as mm/dd/yyyy as 09/25/2013
+//            Thread.sleep(2000);
+//            validityStartDate.sendKeys("17-10-2022");
+//
+//            WebElement validityEndDate = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-compliance-pop[1]/div[1]/div[2]/div[5]/div[3]/div[1]/kendo-datepicker[1]/span[1]/kendo-dateinput[1]/span[1]/input[1]"));
+//            //Fill date as mm/dd/yyyy as 09/25/2013
+//            Thread.sleep(2000);
+//            validityEndDate.sendKeys("27-10-2022");
 
+            driver.findElement(By.xpath("//button[@class='btn btn-pop-save action_btn_class ng-star-inserted']")).click();
+
+            //Save Compliance Button
+            driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-compliance-pop[1]/div[1]/div[3]/button[3]")).click();
+
+            // Save Supplier Master
+            driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-compliance-pop[1]/div[1]/div[3]/button[3]")).click();
         }
         catch (Exception exception)
         {
             System.out.println("Exception : " +exception);
         }
-
-
 
     }
 
