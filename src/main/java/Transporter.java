@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import java.util.function.Function;
 
-
 import java.time.Duration;
 import java.util.List;
 
