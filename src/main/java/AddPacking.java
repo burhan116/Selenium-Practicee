@@ -33,7 +33,7 @@ public class AddPacking {
         // packing
         driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[1]/div[1]/app-left-menu[1]/nav[1]/div[1]/ul[1]/li[4]/div[1]/ul[1]/li[3]/a[1]")).click();
         // Generate
-        driver.findElement(By.xpath("(//button[@class='btn btn-add btn-green btn-icon-text ng-star-inserted'][normalize-space()='PACKING'])[1]")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[1]/div[1]/app-list[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/form[1]/app-page-grid[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[9]/button[1]")).click();
         // Save Button of Packing
         driver.findElement(By.xpath("(//i[@title='Save'])[1]")).click();
         // Release Button
